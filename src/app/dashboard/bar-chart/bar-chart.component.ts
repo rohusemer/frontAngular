@@ -29,7 +29,7 @@ export class BarChartComponent implements OnInit {
     .attr("transform", "translate(" + this.margin + "," + this.margin + ")");
   }
 
-  private drawBars(data: any[]): void {
+  private drawBars(data: any): void {
     // Create the X-axis band scale
     const x = d3.scaleBand()
     .range([0, this.width])
@@ -67,7 +67,7 @@ export class BarChartComponent implements OnInit {
   ngOnInit(): void {
     this.createSvg();
     this.drawBars(this.data);
-    //d3.json('http://localhost:4000/api/cliente').then(data => this.drawBars(data));
+    d3.json('http://localhost:4000/api/cuenta').then(data => this.drawBars(data));
   }
 
 }

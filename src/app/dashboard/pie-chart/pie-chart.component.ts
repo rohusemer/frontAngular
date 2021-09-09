@@ -76,9 +76,9 @@ export class PieChartComponent implements OnInit {
     this.createSvg();
     this.createColors();
     //comentar esta linea
-    this.drawChart();
+    //this.drawChart();
 
-    //d3.json('url/ registros').then(data => this.drawChart(data));
+    d3.json('http://localhost:4000/api/cuenta').then(data => this.drawChart());
   }
 
 }

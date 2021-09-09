@@ -71,7 +71,7 @@ export class ScatterChartComponent implements OnInit {
      //comentar esta linea
      this.drawPlot();
 
-     //d3.json('url/ registros').then(data => this.drawPlot(data));
+     d3.json('http://localhost:4000/api/cuenta').then(data => this.drawPlot());
   }
 
 }

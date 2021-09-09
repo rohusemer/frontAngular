@@ -98,49 +98,60 @@
 </div>
 
 <div class="container-fluid">
+<section class="ftco-section">
     <div class="container">
-    <h2>Registros</h2>
-    <a href="/nuevoregistro" class="btn btn-primary btn-sm active float-right" role="button" aria-pressed="true">Nuevo registro</a>
-  </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Clientes</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-primary" routerLink="/nuevoregistro">Nuevo Registro</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-wrap">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#.</th>
+                                <th>cod Cliente</th>
+                                <th>cod Cuenta</th>
+                                <th>Tipo</th>
+                                <th>monto</th>
+                                <th>fecha</th>
+                                <th>categoria</th>
+                                <th>descripcion</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Recorra el atributo clientes -->
+                            <tr class="alert" role="alert" *ngFor="let regis of registros">
+                                <th scope="row">{{regis.id}}</th>
+                                <td>{{regis.clienteid}}</td>
+                                <td>{{regis.cuentaid}}</td>
+                                <td>{{regis.tipo}}</td>
+                                <td>{{regis.monto}}</td>
+                                <td>{{regis.fecha}}</td>
+                                <td>{{regis.categoria}}</td>
+                                <td>{{regis.descripcion}}</td>
 
-    <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+                                <td>
+                                    <a class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
 
-            <!--  <th scope="col">Id</th>
-            <th scope="col">Cliente</th>
-            <th scope="col">Cuenta</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Monto</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Categoria</th>
-            <th scope="col">Descripcion</th> -->
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 </div>

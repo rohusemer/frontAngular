@@ -10,7 +10,6 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DregistrosComponent } from './dregistros/dregistros.component';
 import { NuevoregistroComponent } from './nuevoregistro/nuevoregistro.component';
-
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.component';
 import { NuevacuentaComponent } from './nuevacuenta/nuevacuenta.component';
@@ -25,6 +24,8 @@ const routes: Routes = [
   { path: 'estadisticas', component: EstadisticasComponent },
   { path: 'registros', component: DregistrosComponent },
   { path: 'nuevoregistro', component: NuevoregistroComponent },
+
+  { path: 'contactanos', component: ContactanosComponent },
   { path: 'nuevacuenta', component: NuevacuentaComponent },
   
 

@@ -106,11 +106,17 @@
     <div class="container mt-5 mb-5 d-flex justify-content-center">
 
        
-            <form method="POST" action="http://localhost:4000/api/cliente/login">
+            <form method="POST" action="http://localhost:4000/api/cuenta">
 
                 <div class="row">
-                                    
-                    <div class="col-lg-12">
+                                   
+                        <div class="form-group">
+                            <label class="control-label">Número de Cliente</label>
+                            <div class="input-group"> <input class="form-control" type="number" placeholder="Ej: 1"
+                                    name="clienteid">
+                            </div>
+                        </div>
+                <div class="col-lg-12">
                         <div class="form-group">
                             <label class="control-label">Tipo</label>
                             <div class="input-group"> <input class="form-control" type="text" placeholder="Ej: ingreso"
@@ -144,7 +150,7 @@
 
 
                
-                <a href="/dashboard" class="btn btn-primary btn-block confirm-button" role="button" aria-pressed="true">Guardar</a>
+                <button class="btn btn-primary btn-block confirm-button">Guardar</button>
 
             </form>
 

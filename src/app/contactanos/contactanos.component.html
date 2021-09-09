@@ -44,7 +44,7 @@
           </div>
 
       <!-- <form (ngSubmit)="contactForm(form.value)" #form="ngForm"> -->
-        <form>
+        <form method="POST" action="http://localhost:4000/api/subscripcion">
 
       <div class="col-md-12">
           <h4>Llena nuestro formulario y nos pondremos en contacto contigo lo antes posible.<br></h4>
@@ -103,7 +103,7 @@
       </div>
 
 
-      <div class="text-center"><button type="submit" class= "btn btn-primary btn-block">Enviar</button></div>
+      <button class="btn btn-primary btn-block confirm-button">Enviar</button>
     </form>
 
 
