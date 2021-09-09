@@ -1,0 +1,55 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Clientes</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-primary" routerLink="/postclientes">Agregar cliente</button>
+                <button type="button" class="btn btn-primary" routerLink="/login">Inicio sesion</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-wrap">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID no.</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Fecha de nacimiento</th>
+                                <th>correo</th>
+                                <th>usuario</th>
+                                <th>password</th>
+                                <th>cedula</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Recorra el atributo clientes -->
+                            <tr class="alert" role="alert" *ngFor="let cliente of clientes">
+                                <th scope="row">{{cliente.id}}</th>
+                                <td>{{cliente.nombre}}</td>
+                                <td>{{cliente.apellidos}}</td>
+                                <td>{{cliente.fechaNacimiento}}</td>
+                                <td>{{cliente.correo}}</td>
+                                <td>{{cliente.usuario}}</td>
+                                <td>{{cliente.passwd}}</td>
+                                <td>{{cliente.cedula}}</td>
+                                <td>
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
