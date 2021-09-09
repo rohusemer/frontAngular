@@ -11,15 +11,21 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DregistrosComponent } from './dregistros/dregistros.component';
 import { NuevoregistroComponent } from './nuevoregistro/nuevoregistro.component';
 
+import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
+import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.component';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'registro', component: PostClientesComponent },
   { path: 'login', component: PostLoginComponent },
   { path: 'equipo', component: EquipoComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard-admin', component: DashboardAdminComponent },
+  { path: 'estadisticas', component: EstadisticasComponent },
   { path: 'registros', component: DregistrosComponent },
   { path: 'nuevoregistro', component: NuevoregistroComponent },
   
+
 ];
 
 @NgModule({
