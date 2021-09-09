@@ -9,6 +9,7 @@ import { PostLoginComponent } from './post-login/post-login.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DregistrosComponent } from './dregistros/dregistros.component';
+import { NuevoregistroComponent } from './nuevoregistro/nuevoregistro.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'equipo', component: EquipoComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'registros', component: DregistrosComponent },
+  { path: 'nuevoregistro', component: NuevoregistroComponent },
   
 ];
 
