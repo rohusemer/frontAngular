@@ -19,6 +19,7 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PieEstructuraSaldosComponent } from './dashboard/pie-estructura-saldos/pie-estructura-saldos.component';
+import { DregistrosComponent } from './dregistros/dregistros.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PieEstructuraSaldosComponent } from './dashboard/pie-estructura-saldos/
     EquipoComponent,
     ContactanosComponent,
     DashboardComponent,
-    PieEstructuraSaldosComponent
+    PieEstructuraSaldosComponent,
+    DregistrosComponent
   ],
   imports: [
     BrowserModule,
