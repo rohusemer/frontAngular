@@ -17,6 +17,9 @@ import { HomeComponent } from './home/home.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { PieEstructuraSaldosComponent } from './dashboard/pie-estructura-saldos/pie-estructura-saldos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,9 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
     FooterComponent,
     HomeComponent,
     EquipoComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    DashboardComponent,
+    PieEstructuraSaldosComponent
   ],
   imports: [
     BrowserModule,
