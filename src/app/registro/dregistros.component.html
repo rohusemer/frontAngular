@@ -64,19 +64,19 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a routerLink="/dashboard" class="nav-link active" aria-current="page">
+        <a routerLink="/dashboard" class="nav-link text-white" aria-current="page">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
           Panel de Control
         </a>
       </li>
       <li>
-        <a routerLink="/registros" class="nav-link text-white">
+        <a routerLink="/registros" class="nav-link active">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           Registros
         </a>
       </li>
       <li>
-        <a routerLink="/estadisticas" class="nav-link text-white">
+        <a href="#" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
           Estadísticas
         </a>
@@ -98,114 +98,40 @@
 </div>
 
 <div class="container-fluid">
+    <div class="container">
+    <h2>Registros</h2>
+    <a href="#" class="btn btn-primary btn-sm active float-right" role="button" aria-pressed="true">Nuevo registro</a>
+  </div>
 
-    <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Cards</h1>
-    </div>
-
-    <div class="row">
-
-        <!-- Plantilla Cuenta -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Efectivo</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000.20</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Banco del Pacifico</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$55,420.13</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div href class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                <a href="/nuevacuenta" aria-pressed="true">Agregar cuenta</a></div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">+</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-lg-6">
-
-            <!-- Pie: Estructura de saldos -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    Estructura de saldos
-                </div>
-                <div class="card-body">
-                    <app-pie-estructura-saldos></app-pie-estructura-saldos>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-
-            <!-- Default Card Example -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    Default Card Example
-                </div>
-                <div class="card-body">
-                    This card uses Bootstrap's default styling with no utility classes added. Global
-                    styles are the only things modifying the look and feel of this default card example.
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-
-        <div class="col-lg-6">
-
-            <!-- Default Card Example -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    Default Card Example
-                </div>
-                <div class="card-body">
-                    This card uses Bootstrap's default styling with no utility classes added. Global
-                    styles are the only things modifying the look and feel of this default card example.
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-
-            <!-- Default Card Example -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    Default Card Example
-                </div>
-                <div class="card-body">
-                    This card uses Bootstrap's default styling with no utility classes added. Global
-                    styles are the only things modifying the look and feel of this default card example.
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      
 </div>

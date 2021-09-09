@@ -20,11 +20,16 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PieEstructuraSaldosComponent } from './dashboard/pie-estructura-saldos/pie-estructura-saldos.component';
 import { DregistrosComponent } from './dregistros/dregistros.component';
+
+import { NuevoregistroComponent } from './nuevoregistro/nuevoregistro.component';
+
 import { BarChartComponent } from './dashboard/bar-chart/bar-chart.component';
 import { PieChartComponent } from './dashboard/pie-chart/pie-chart.component';
 import { ScatterChartComponent } from './dashboard/scatter-chart/scatter-chart.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.component';
+import { NuevacuentaComponent } from './nuevacuenta/nuevacuenta.component';
+
 
 @NgModule({
   declarations: [
@@ -43,11 +48,13 @@ import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.com
     DashboardComponent,
     PieEstructuraSaldosComponent,
     DregistrosComponent,
+    NuevoregistroComponent,
     BarChartComponent,
     PieChartComponent,
     ScatterChartComponent,
     DashboardAdminComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    NuevacuentaComponent
   ],
   imports: [
     BrowserModule,

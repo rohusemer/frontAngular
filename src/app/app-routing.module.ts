@@ -9,8 +9,11 @@ import { PostLoginComponent } from './post-login/post-login.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DregistrosComponent } from './dregistros/dregistros.component';
+import { NuevoregistroComponent } from './nuevoregistro/nuevoregistro.component';
+
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.component';
+import { NuevacuentaComponent } from './nuevacuenta/nuevacuenta.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +24,9 @@ const routes: Routes = [
   { path: 'dashboard-admin', component: DashboardAdminComponent },
   { path: 'estadisticas', component: EstadisticasComponent },
   { path: 'registros', component: DregistrosComponent },
+  { path: 'nuevoregistro', component: NuevoregistroComponent },
+  { path: 'nuevacuenta', component: NuevacuentaComponent },
+  
 
 ];
 
