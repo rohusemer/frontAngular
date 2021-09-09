@@ -28,6 +28,7 @@ import { PieChartComponent } from './dashboard/pie-chart/pie-chart.component';
 import { ScatterChartComponent } from './dashboard/scatter-chart/scatter-chart.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.component';
+import { NuevacuentaComponent } from './nuevacuenta/nuevacuenta.component';
 
 
 @NgModule({
@@ -47,12 +48,13 @@ import { EstadisticasComponent } from './dashboard/estadisticas/estadisticas.com
     DashboardComponent,
     PieEstructuraSaldosComponent,
     DregistrosComponent,
-    NuevoregistroComponent
+    NuevoregistroComponent,
     BarChartComponent,
     PieChartComponent,
     ScatterChartComponent,
     DashboardAdminComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    NuevacuentaComponent
   ],
   imports: [
     BrowserModule,
