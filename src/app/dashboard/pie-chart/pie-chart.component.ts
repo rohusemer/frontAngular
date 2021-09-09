@@ -77,6 +77,7 @@ export class PieChartComponent implements OnInit {
     this.createColors();
     //comentar esta linea
     this.drawChart();
+
     //d3.json('url/ registros').then(data => this.drawChart(data));
   }
 
