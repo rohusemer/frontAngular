@@ -1,7 +1,11 @@
+<body>
+    
+
 <div class="container mt-5 mb-5 d-flex justify-content-center">
     <div class="card px-1 py-4">
         <div class="card-body">
-            <h6 class="card-title mb-3 text-center font-weight-bold">Nuevo cliente</h6>
+            <a routerLink='/' ><img class="mb-4" src="../assets/img/logo-02.png" alt="Moneytracker logo" width="auto" height="100"></a>
+            <h6 class="card-title mb-3 text-center font-weight-bold">¡Bienvenido!</h6>
             <form method="POST" action="http://localhost:4000/api/cliente/login">
 
                 <div class="row">
@@ -27,3 +31,6 @@
         </div>
     </div>
 </div>
+<p class="mt-5 mb-3 text-muted">¿No tienes una cuenta?</p>
+<a routerLink='/registro'>Regístrate aquí</a>
+</body>

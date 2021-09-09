@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url("../../assets/img/5524702.png"),linear-gradient(to top, rgba(5, 13, 39, 1) 0%,rgba(15, 13, 39, 1) 100%);
+  background-size: cover;
+  height: 100vh;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+
+a{
+  color: white;
+}
